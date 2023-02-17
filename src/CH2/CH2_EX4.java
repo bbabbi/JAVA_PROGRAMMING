@@ -42,3 +42,9 @@ public class CH2_EX4 {
         scanner.close(); // scanner 객체 닫기
     }
 }
+
+/* Tips : 응용프로글매 전체에 Scanner 객체를 하나만 생성하고 공유하는 것이 바람직하다.
+   Scanner 객체를 여러 개 생성하더라도, 모두 하나뿐인 System.in을 공유하잖아?
+   그러니까, Scanner.close()를 호출해서 Scanner 객체를 닫으면 어찌됐던 System.in이 닫힘.
+   따라서 응용프로그램 내 다른 Scanner 객체에서 키 입력을 받을 수 없게 된다.
+ */
