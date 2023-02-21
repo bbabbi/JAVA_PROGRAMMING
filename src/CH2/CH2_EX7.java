@@ -16,9 +16,9 @@ public class CH2_EX7 {
         System.out.println();
 
         // 비교 연산과 논리 연산 복합
-        System.out.println((3 > 2) && (3 > 4)); // 1 && 0 == 0 false 둘 다 true이면 true,,
-        System.out.println((3 != 2) || (-1 > 0)); // 1 || 0 true 둘 다 false이면 false
+        System.out.println((3 > 2) && (3 > 4)); // false && true == true false 둘 다 true이면 true,,
+        System.out.println((3 != 2) || (-1 > 0)); // false || true true 둘 다 false이면 false
         /* XOR 연산 기억 안 났음 ! */
-        System.out.println((3 != 2) ^ (-1 > 0)); // 1 ^ 0 true XOR연산은 둘이 다를 때 true 같으면 flase임.
+        System.out.println((3 != 2) ^ (-1 > 0)); // true ^ false true XOR연산은 둘이 다를 때 true 같으면 flase임.
     }
 }
