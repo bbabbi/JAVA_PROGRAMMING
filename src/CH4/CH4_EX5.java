@@ -40,6 +40,10 @@ public class CH4_EX5 {
 
     public static void main(String[] args){
         CH4_EX5 littlePrince = new CH4_EX5("어린왕자", "생텍쥐페리");
+        // new가 실행될 때 CH4_EX5(String title) 생성자가 호출되며, title에는 "춘향전"이 전달된다.
+        // 그리고 생성자는 바로 다음 this()문을 실행한다. -> this(title, "작자미상")
+        // 이 this()문은 2개의 매개변수를 가진 생성자를 다시 호출한다. -> public CH4_EX5(String title, String author)
+        // 이 생성자에 의해 멤버 title과 author는 각각 "춘향전", "작자미상"으로 초기화 된다.
         CH4_EX5 loveStory = new CH4_EX5("춘향전");
         CH4_EX5 emptyBook = new CH4_EX5();
         loveStory.show();
